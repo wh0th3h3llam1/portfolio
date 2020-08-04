@@ -1,0 +1,12 @@
+<!--Scroll to top-->
+<div class="scroll-to-top" [ngClass]="{'show-scrollTop': windowScrolled}">
+	<button 
+		mat-fab
+		(click)="scrollToTop()"
+		color="primary"
+		matTooltip="Back to Top"
+		aria-label="Back to Top">
+		<!-- matTooltipShowDelay="showDelay.value"> -->
+		<mat-icon>expand_less</mat-icon>
+	</button>
+</div>

@@ -1,0 +1,29 @@
+#main-info-bar
+{
+	min-height: 85px;
+	background-color: black;
+}
+
+/* Class for all nav buttons */
+.fonts
+{
+	color: white;
+	font-size: 21px;
+}
+
+span
+{
+	padding-right: 1rem;
+}
+
+.img
+{
+	height: 24px;
+	width: 24px;
+}
+
+a
+{
+	color: white;
+	text-decoration: none;
+}

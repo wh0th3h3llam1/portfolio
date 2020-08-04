@@ -1,0 +1,36 @@
+<footer >
+	<mat-toolbar id="main-info-bar">
+		<mat-toolbar-row fxLayout="row wrap" fxLayoutAlign="space-around center">
+			<div class="fonts">
+				<a [routerLink]="['/']" routerLinkActive="router-link-active">
+					Copyright &copy;
+					<!-- <mat-icon>keyboard_arrow_right</mat-icon> -->
+					__wh0am1__
+				</a>
+			</div>
+			<div class="fonts">
+				<span>
+					<!-- <a href="https://github.com/wh0th3h3llam1">
+						<img src="assets/images/github-icon-white.png" alt="GitHub Icon" class="img">
+					</a> -->
+					<button mat-button (click)="github()">
+						<img src="assets/images/github-icon-white.png" alt="GitHub Icon" class="img">
+					</button>
+				</span>
+				<span>
+						<!-- <a href="https://twitter.com/__wh0am1__">
+							<img src="assets/images/twitter-icon-18-256.png" alt="Twitter" class="img">
+						</a> -->
+					<button mat-button (click)="twitter()">
+							<img src="assets/images/twitter-icon-18-256.png" alt="Twitter" class="img">
+					</button>
+				</span>
+				<span>
+					<button mat-button (click)="mail()">
+							<mat-icon>mail</mat-icon>
+					</button>
+				</span>
+			</div>
+		</mat-toolbar-row>
+	</mat-toolbar>
+</footer>

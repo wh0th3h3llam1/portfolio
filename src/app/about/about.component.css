@@ -1,0 +1,14 @@
+*
+{
+	background-color: #262626;
+	color: white;
+}
+
+.center {
+	text-align: center;
+	align-items: center;
+}
+
+p {
+	font-size: large;
+}

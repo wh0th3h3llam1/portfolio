@@ -1,0 +1,29 @@
+<!-- Main Navbar -->
+<nav class="navigation mat-elevation-z8" id="main-navbar">
+	<mat-toolbar>
+		<mat-toolbar-row id="main-info-bar" fxLayoutAlign="space-between center">
+			<div class="fonts">
+				<a [routerLink]="['/']" routerLinkActive="router-link-active">
+					<mat-icon>keyboard_arrow_right</mat-icon>
+					__wh0am1__
+				</a>
+			</div>
+			<div class="fonts">
+				<span>
+					<button class="fonts" routerLink="/about" mat-button>About</button>
+				</span>
+				<span>
+					<button mat-button (click)="github()">
+						<img src="assets/images/github-icon-white.png" alt="GitHub Icon" class="img">
+					</button>
+				</span>
+				<span>
+					<button mat-button (click)="twitter()">
+						<img src="assets/images/twitter-icon-18-256.png" alt="Twitter" class="img">
+					</button>
+				</span>
+			</div>
+		</mat-toolbar-row>
+	</mat-toolbar>
+</nav>
+<br><br><br><br>
