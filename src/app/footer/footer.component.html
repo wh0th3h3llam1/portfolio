@@ -13,7 +13,7 @@
 					<!-- <a href="https://github.com/wh0th3h3llam1">
 						<img src="assets/images/github-icon-white.png" alt="GitHub Icon" class="img">
 					</a> -->
-					<button mat-button (click)="github()">
+					<button mat-button (click)="github()" matTooltip="GitHub">
 						<img src="assets/images/github-icon-white.png" alt="GitHub Icon" class="img">
 					</button>
 				</span>
@@ -21,13 +21,23 @@
 						<!-- <a href="https://twitter.com/__wh0am1__">
 							<img src="assets/images/twitter-icon-18-256.png" alt="Twitter" class="img">
 						</a> -->
-					<button mat-button (click)="twitter()">
+					<button mat-button (click)="twitter()" onmouseover="changeColor()" matTooltip="Twitter">
 							<img src="assets/images/twitter-icon-18-256.png" alt="Twitter" class="img">
 					</button>
 				</span>
 				<span>
-					<button mat-button (click)="mail()">
-							<mat-icon>mail</mat-icon>
+					<button mat-button (click)="medium()" matTooltip="Medium">
+						<img src="assets/images/medium-512.webp" alt="Medium" class="img">
+					</button>
+				</span>
+				<span>
+					<button mat-button (click)="mail()" matTooltip="Gmail : wh0am1.7548@gmail.com">
+						<mat-icon>mail_outline</mat-icon>
+					</button>
+				</span>
+				<span>
+					<button mat-button (click)="protonmail()" matTooltip="ProtonMail: wh0th3h3llam1@pm.me">
+						<img src="assets/images/protonmail-icon.png" alt="ProtonMail" class="img">
 					</button>
 				</span>
 			</div>

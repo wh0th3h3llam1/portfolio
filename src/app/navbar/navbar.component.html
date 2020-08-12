@@ -13,13 +13,18 @@
 					<button class="fonts" routerLink="/about" mat-button>About</button>
 				</span>
 				<span>
-					<button mat-button (click)="github()">
+					<button mat-button (click)="github()" matTooltip="GitHub">
 						<img src="assets/images/github-icon-white.png" alt="GitHub Icon" class="img">
 					</button>
 				</span>
 				<span>
-					<button mat-button (click)="twitter()">
+					<button mat-button (click)="twitter()" matTooltip="Twitter">
 						<img src="assets/images/twitter-icon-18-256.png" alt="Twitter" class="img">
+					</button>
+				</span>
+				<span>
+					<button mat-button (click)="medium()">
+						<img src="assets/images/medium-512.webp" alt="Medium" class="img">
 					</button>
 				</span>
 			</div>

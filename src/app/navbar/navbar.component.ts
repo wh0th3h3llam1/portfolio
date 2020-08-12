@@ -19,4 +19,8 @@ export class NavbarComponent implements OnInit {
 	github() {
 		location.href = "https://github.com/wh0th3h3llam1";
 	}
+
+	medium() {
+		location.href = "https://medium.com/@wh0th3h3llam1";
+	}
 }

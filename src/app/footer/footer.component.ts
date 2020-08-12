@@ -20,7 +20,19 @@ export class FooterComponent implements OnInit {
 		location.href = "https://github.com/wh0th3h3llam1";
 	}
 
+	medium() {
+		location.href = "https://medium.com/@wh0th3h3llam1";
+	}
+	
 	mail() {
 		location.href = "mailto:wh0am1.7548@gmail.com?subject='Hello'";
+	}
+
+	protonmail() {
+		location.href = "mailto:wh0th3h3llam1@pm.me?subject='Hello'";
+	}
+
+	changeColor() {
+		// color: #1da1f2;
 	}
 }
