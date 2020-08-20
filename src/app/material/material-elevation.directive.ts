@@ -7,16 +7,12 @@ import { Directive, ElementRef, HostListener, Input, Renderer2, OnChanges, Simpl
 export class MaterialElevationDirective implements OnChanges {
 
 	@Input()
-	defaultElevation = 2;
+	defaultElevation = 0;
 
 	@Input()
 	raisedElevation = 8;
 
-	constructor(
-		private element: ElementRef,
-		private renderer: Renderer2
-	)
-	{
+	constructor(private element: ElementRef, private renderer: Renderer2) {
 		this.setElevation(this.defaultElevation);
 	}
 
