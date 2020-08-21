@@ -47,9 +47,11 @@
 
 
 		<!-- Technical Skills -->
-		<div>
+		<div class="tech-skills">
 			<h1>Technical Skills</h1>
 			<mat-divider></mat-divider>
+			<br>
+
 			<mat-chip-list aria-label="Skills">
 				<h3>Core Skills - </h3>
 				<mat-chip color="primary" selected>CyberSecurity</mat-chip>
@@ -106,7 +108,7 @@
 		<br>
 
 		<!-- Work Experience -->
-		<div>
+		<div class="work">
 			<h1>Work Experience</h1>
 			<mat-divider></mat-divider>
 			<br>
@@ -121,24 +123,78 @@
 								Exercism.io
 								<mat-icon>link</mat-icon>
 							</h3>
+							<!-- <h4>Student Mentor</h4> -->
 						</a>
 					</mat-card-title>
-					<mat-card-subtitle><h3>May 2020 - Present</h3></mat-card-subtitle>
+					<mat-card-subtitle>
+						<i>May 2020 - Present</i>
+					</mat-card-subtitle>
 				</mat-card-header>
+
 				<mat-card-content>
-					<p>
+					<!-- <p>
 						- Mentoring Students for write better, efficient and readable code.
 						<br>
 						- Mentored 200+ students for Python.
-					</p>
+					</p> -->
+					
+					<mat-list role="list">
+						<mat-list-item role="listitem">
+							Mentoring Students for write better, efficient and readable code.
+						</mat-list-item>
+						<mat-list-item role="listitem">
+							Mentored 200+ students for Python.
+						</mat-list-item>
+						<mat-list-item role="listitem">
+							Item 3
+						</mat-list-item>
+					  </mat-list>
 				</mat-card-content>
 			</mat-card>
 			<br>
 		</div>
 		<br>
 
+		<!-- Personal Projects -->
+		<div class="projects">
+			<h1>Personal Projects</h1>
+			<mat-divider></mat-divider>
+			<br>
+			
+			<!-- BestBid Card -->
+			<mat-card appMaterialElevation>
+				<mat-card-header>
+					<mat-card-title>
+						<a href="https://github.com/wh0th3h3llam1/bestbid" target="_blank">
+							<h3>
+								BestBid
+								<mat-icon>link</mat-icon>
+							</h3>
+						</a>
+					</mat-card-title>
+					<mat-card-subtitle>
+						<i>Dec 19 - May 2020</i>
+					</mat-card-subtitle>
+				</mat-card-header>
+
+				<mat-card-content>
+					
+					<mat-list role="list">
+						<mat-list-item role="listitem">
+							Live Auctioning System implemented in Django
+						</mat-list-item>
+						<mat-list-item role="listitem">
+							BestBid is a platform where users can bid for exotic cars and villas.
+						</mat-list-item>
+					  </mat-list>
+				</mat-card-content>
+			</mat-card>
+			<br>
+		</div>
+		<br>
+		
 		<!-- Let's Connect -->
-		<div>
+		<div class="lets-connect">
 			<h1>Let's Connect</h1>
 			<mat-divider></mat-divider>
 			<br>
@@ -183,3 +239,6 @@
 	<br><br>
 
 </main>
+
+
+<scroll-to-top></scroll-to-top>

@@ -8,7 +8,7 @@
 					__wh0am1__
 				</a>
 			</div>
-			<div class="fonts">
+			<div class="fonts" fxHide.lt-md>
 				<span>
 					<button class="fonts" routerLink="/about" mat-button>About</button>
 				</span>
@@ -28,7 +28,38 @@
 					</button>
 				</span>
 			</div>
+
+			<div class="navmenu" fxHide.gt-sm>
+				<span>
+					<button class="fonts" mat-button [matMenuTriggerFor]="navmenu" #menuTrigger="matMenuTrigger">
+						<mat-icon>menu</mat-icon>
+					</button>
+				</span>
+			</div>
+
 		</mat-toolbar-row>
 	</mat-toolbar>
 </nav>
+
 <br><br><br><br>
+
+
+<!-- Menu on Screen Size Smaller than MD -->
+<mat-menu #navmenu="matMenu" [overlapTrigger]="false" xPosition="before">
+	<button routerLink="/" mat-menu-item>
+		<mat-icon>home</mat-icon>
+		Home
+	</button>
+	<button routerLink="/about" mat-menu-item>
+		<mat-icon>info</mat-icon>
+		About
+	</button>
+	<button (click)="github()" mat-menu-item>
+		<mat-icon svgIcon="github"></mat-icon>
+		GitHub
+	</button>
+	<button (click)="twitter()" mat-menu-item>
+		<mat-icon svgIcon="twitter"></mat-icon>
+		Twitter
+	</button>
+</mat-menu>
