@@ -13,15 +13,15 @@ export class FooterComponent implements OnInit {
 	}
 
 	twitter() {
-		location.href = "https://twitter.com/__wh0am1__";
+		window.open("https://twitter.com/__wh0am1__");
 	}
 
 	github() {
-		location.href = "https://github.com/wh0th3h3llam1";
+		window.open("https://github.com/wh0th3h3llam1");
 	}
 
 	medium() {
-		location.href = "https://medium.com/@wh0th3h3llam1";
+		window.open("https://medium.com/@wh0th3h3llam1");
 	}
 	
 	mail() {
